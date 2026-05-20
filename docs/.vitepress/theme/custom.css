@@ -37,3 +37,13 @@ body {
   border-radius: 16px;
   padding: 24px;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/image.png') !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background-attachment: scroll !important;
+    background-repeat: no-repeat !important;
+  }
+}
