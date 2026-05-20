@@ -1,28 +1,38 @@
-body {
-  background-image: url('./image.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-/* 让 VitePress 主体背景透明 */
 :root {
   --vp-c-bg: transparent;
   --vp-c-bg-alt: transparent;
   --vp-c-bg-soft: rgba(255, 255, 255, 0.72);
 }
 
-/* 页面整体透明 */
-.VPContent,
-.VPDoc,
-.VPPage {
-  background: transparent;
+html,
+body,
+#app {
+  min-height: 100%;
 }
 
-/* 正文区域加半透明白色卡片，避免文字看不清 */
-.VPDoc .content {
+body {
+  background-image: url('/image.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+
+.Layout,
+.VPContent,
+.VPPage,
+.VPDoc,
+.VPHome {
+  background: transparent !important;
+}
+
+.VPNav {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(10px);
+}
+
+.VPDoc .content,
+.VPHome .main {
   background: rgba(255, 255, 255, 0.78);
   border-radius: 16px;
   padding: 24px;
