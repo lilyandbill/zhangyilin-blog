@@ -42,7 +42,7 @@ body {
   body {
     background-image: url('/image.png') !important;
     background-size: cover !important;
-    background-position: center top !important;
+    background-position: right top !important;
     background-attachment: scroll !important;
     background-repeat: no-repeat !important;
   }
